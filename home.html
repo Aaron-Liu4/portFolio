@@ -1,0 +1,693 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aaron Liu | CS Portfolio</title>
+    <link rel="stylesheet" href="assets/styles.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="logo">
+                <a href="#"><span class="highlight">Aaron</span>Liu</a>
+            </div>
+            <div class="nav-toggle" id="navToggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="animate-slide-up">Hi, I'm <span class="highlight">Aaron Liu</span></h1>
+                <h2 class="animate-slide-up delay-1">Bachelors of Computer Science at UNSW</h2>
+                <p class="animate-slide-up delay-2">Passionate about revolutionising software with new technologies</p>
+                <div class="hero-buttons animate-slide-up delay-3">
+                    <a href="#projects" class="btn btn-primary">Projects</a>
+                    <a href="#contact" class="btn btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image animate-fade-in">
+                <img src="images/blackguy1.avif" alt="Aaron Liu">
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            <div class="about-content">
+                <div class="about-image animate-on-scroll">
+                    <img src="images/close-up-upset-american-black-person_23-2148749582.avif" alt="About Aaron Liu">
+                </div>
+                <div class="about-text animate-on-scroll">
+                    <h3>3rd year Computer Science Student at <span class="highlight">UNSW</span></h3>
+                    <p>I'm a passionate computer science student with a focus on software development and artificial intelligence. Along with my studies, I have worked on numerous projects, ranging from websites, to AI-powered algorithms to read invoices</p>
+                    <p>Currently pursuing my Bachelor's degree in Computer Science, I'm constantly learning and building projects that challenge me to grow as a developer.</p>
+                    <div class="about-details">
+                        <div class="detail">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>B.S. in Computer Science (Expected 2025)</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-code"></i>
+                            <span>Full-Stack Developer</span>
+                        </div>
+                        <div class="detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Sydney, NSW, Australia</span>
+                        </div>
+                    </div>
+                    <a href="#" class="btn btn-primary">Download Resume</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            <div class="section-underline"></div>
+            
+            <div class="skills-container">
+                <!-- Programming Languages -->
+                <div class="skills-card">
+                    <h3 class="card-title">Programming Languages</h3>
+                    <div class="card-icon">
+                        <i class="fas fa-code"></i>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag">Python</div>
+                        <div class="skill-tag">JavaScript</div>
+                        <div class="skill-tag">Java</div>
+                        <div class="skill-tag">C</div>
+                        <div class="skill-tag">SQL</div>
+                        <div class="skill-tag">HTML&CSS</div>
+                    </div>
+                </div>
+                
+                <!-- Data Science & ML -->
+                <div class="skills-card">
+                    <h3 class="card-title">Data Science & ML</h3>
+                    <div class="card-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag">Machine Learning</div>
+                        <div class="skill-tag">Neural Networks</div>
+                        <div class="skill-tag">NLP</div>
+                        <div class="skill-tag">PostgreSQL</div>
+                    </div>
+                </div>
+                
+                <!-- DevOps & Cloud -->
+                <div class="skills-card">
+                    <h3 class="card-title">DevOps & Cloud</h3>
+                    <div class="card-icon">
+                        <i class="fas fa-cloud"></i>
+                    </div>
+                    <div class="skills-list">
+                        <div class="skill-tag">AWS</div>
+                        <div class="skill-tag">Docker</div>
+                        <div class="skill-tag">CI/CD</div>
+                        <div class="skill-tag">Git</div>
+                        <div class="skill-tag">Django</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <div id="popup" class="popup">
+        <div class="popup-content" style="overflow-y: auto;">
+            <span class="close-btn" onclick="closePopup('')">&times;</span>
+            <div class="imgContainer">
+                <h1>Invoice Reader</h1><br><br>
+                <img src="images/invoice.png" alt="Example Image" style="width: 50%; height: auto;">
+            </div>
+            <h5>Problem definition</h5>
+            <p>Invoices come in a wide range of formats, each with its own little characteristic that makes it unique. The process of digitising them manually requries many hours of labour, with employees needing to repeat the same menial task for hours on end. Not only is this expensive and mind-numbing, but the very essence of manual data entry means that the finished product will be error prone with high turnaround times.</p>
+            <br>
+            <h5>Implementation</h5>
+            <p>I aimed to solve this problem working with Linktech using LLMs, OCR, and robust algorithms. Using my own finetuned LLM which was trained off real samples of data, it was able to correctly identify fields of an invoice along with any nuances, and output the invoice as structured data. I complemented this with OCR and designed algorithms to ensure the accuracy of the processed data.</p>
+            <br>
+            <h5>Tools</h5>
+            <p>I published this service as a website with full CRUD functionality, using PostgreSQL as the database. I developed the database structure to allow for intuitive management of invoices for the user, where they are able to manage 'Jobs', 'Documents', 'Invoices', 'Suppliers' etc. Using Django as the framework with HTML, CSS and Javascript, I developed the website to have an interface that integrates seamlessly with the backend.</p>
+            <br>
+            <h5>Hosting</h5>
+            <p>To host this, I made this service into a docker image, which I upload to AWS ECR and use ECS to run the container. This allows for the service to be scalable, and also allows for easy updates with no downtime. For the database, I used AWS RDS. I utilised AWS VPCs so the RDS instance only allows incoming traffic from IPs in the same VPC, which would only be the ECS instances, ensuring the security of the data.</p>
+        </div>
+    </div>
+    <div id="popup1" class="popup">
+        <div class="popup-content" style="overflow-y: auto;">
+            <span class="close-btn" onclick="closePopup('1')">&times;</span>
+            <div class="imgContainer">
+                <h1>AI Image Classifier</h1><br><br>
+                <img src="images/GradCam.png" alt="Example Image" style="width: 50%; height: auto;">
+            </div>
+            <p>By creating a range of models inluding MLP, CNN, and finetuned Transformers, we experimented with different methods of classifying images between the classes:</p>
+            <ul style="list-style-type: disc; padding-left: 30px; margin-top: 10px;">
+                <li>Real</li>
+                <li>Denoising Defusion GAN</li>
+                <li>Pallete</li>
+                <li>Synthetic Faces High Quality (SFHQ)</li>
+                <li>Style GAN 1</li>
+            </ul><br>
+            <p>We trained our models off the CIFAKE dataset and our best model achieved an overall accuracy of 0.97. We utilised various techniques to optimise our models including dropout, GradCam, and class weights.</p>
+            
+            <br><a href="https://youtu.be/oTYcdy1DrsA" target="_blank" title="Go to video presentation" style="color: blue;">Our presentation video</a>
+            <div class="imgContainer">
+                <img src="images/confusionmatrix.png" alt="Example Image" style="width: 50%; height: auto;">
+            </div>
+        </div>
+    </div>
+    <div id="popup2" class="popup">
+        <div class="popup-content" style="overflow-y: auto;">
+            <span class="close-btn" onclick="closePopup('2')">&times;</span>
+            <div class="imgContainer">
+                <h1>FitTrack</h1><br><br>
+                <img src="images/fitrack.png" alt="Example Image" style="width: 50%; height: auto;">
+            </div>
+            <p>Using React, I collaborated in a group to create a Health tracking website for a hackathon. Key features include:</p>
+            <ul style="list-style-type: disc; padding-left: 30px; margin-top: 10px;">
+                <li>Intelligent food-to-calorie tool where an LLM to estimate the total number of calories in list of foods given in natural language</li>
+                <li>Target Calorie tracker</li>
+                <li>Blog Page</li>
+            </ul><br>
+            
+            <br><a href="https://youtu.be/0pdD_A-cTVY" target="_blank" title="Go to video demonstration" style="color: blue;">Demonstration Video</a>
+            <div class="imgContainer">
+                <img src="images/fitrack1.png" alt="Example Image" style="width: 50%; height: auto;"><br>
+                <img src="images/fitrack2.png" alt="Example Image" style="width: 50%; height: auto;"><br>
+                <img src="images/fitrack3.png" alt="Example Image" style="width: 50%; height: auto;"><br>
+                <img src="images/fitrack4.png" alt="Example Image" style="width: 50%; height: auto;">
+            </div>
+        </div>
+    </div>
+    <div id="popup3" class="popup">
+        <div class="popup-content" style="overflow-y: auto;">
+            <span class="close-btn" onclick="closePopup('3')">&times;</span>
+            <div class="imgContainer">
+                <h1>Light Trail Effect</h1><br><br>
+                <img src="images/lighttrail.png" alt="LightTrailImage" style="width: 50%; height: auto;">
+            </div><br>
+            <p>Using the OpenCV library, I implemented this effect by having a frame that is continuously updated with each frame of the video. To have the lights linger, I had to devise a function to scale the amount each pixel gets updated depending on its intensity. Due to the computatioanlly intensive nature of this program, I implemented multi-core processesing, assigning each core of my CPU a different section of the image, then compiling the results into a final frame.</p>
+            
+        </div>
+    </div>
+    <div id="popup4" class="popup">
+        <div class="popup-content" style="overflow-y: auto;">
+            <span class="close-btn" onclick="closePopup('4')">&times;</span>
+            <div class="imgContainer">
+                <h1>G-G chart</h1><br><br>
+                <img src="images/gg chart.png" alt="chart" style="width: 50%; height: auto;">
+            </div><br>
+            <p>I implemented this by securing my phone to my bike, then using the accelerometer feature to gather some raw data. I then created an algorithm to find the bearing of the bike, as the phone would just be placed without any predefined position. I then apply transformations to account for lean angle, and smoothing to remove jolts in the data from bumps on the road.</p>
+            <br><p>The data for the above graph was gathered from a quick ride, and it shows that I am more confident in my right turns, especially in trail braking. It also shows that I am more confident in accelerating out of turns.</p>
+            
+        </div>
+    </div>
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">My Projects</h2>
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="web">Web Dev</button>
+                <button class="filter-btn" data-filter="mobile">Mobile</button>
+                <button class="filter-btn" data-filter="ai">AI/ML</button>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card animate-on-scroll" data-category="web">
+                    <div class="project-image">
+                        <img src="images/invoice.png" alt="Project 1">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" onclick="openPopup(''); return false;">
+                                    <i class="fas fa-info"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Invoice Reader</h3>
+                        <p>Working with LinkTech, a startup specialising in automating processes in the shipping industry, I leveraged LLMs and OCR to convert invoices in PDFs into CSV files.</p>
+                        <div class="project-tech">
+                            <span>Django</span>
+                            <span>AWS</span>
+                            <span>PostgreSQL</span>
+                            <span>Python</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 2 -->
+                <div class="project-card animate-on-scroll" data-category="ai">
+                    <div class="project-image">
+                        <img src="images/confusionmatrix.png" alt="Project 2">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" onclick="openPopup('1'); return false;">
+                                    <i class="fas fa-info"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>AI Generated Image Classifier</h3>
+                        <p>Worked in a group to develop neural networks to classify whether images are authentic images or AI generated, and if AI generated, it classifies which model generated the image.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>Pytorch</span>
+                            <span>OpenCV</span>
+                            <span>Neural Networks</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 3 -->
+                <div class="project-card animate-on-scroll" data-category="mobile">
+                    <div class="project-image">
+                        <img src="images/fitrack.png" alt="Project 3">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" onclick="openPopup('2'); return false;">
+                                    <i class="fas fa-info"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>FitTrack</h3>
+                        <p>Built a health tracking website for the UNIHACK hackathon built using React.</p>
+                        <div class="project-tech">
+                            <span>React</span>
+                            <span>TypeScript</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 4 -->
+                <div class="project-card animate-on-scroll" data-category="web">
+                    <div class="project-image">
+                        <img src="images/lighttrail.png" alt="Project 3">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" onclick="openPopup('3'); return false;">
+                                    <i class="fas fa-info"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>Light Trail Effect</h3>
+                        <p>Inspired by Gopro's light trail feature and my inability to afford a Gopro Hero 12, I attemtped to recreate the feature with Python.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>OpenCV</span>
+                            <span>Multi-Processing</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 5 -->
+                <div class="project-card animate-on-scroll" data-category="ai">
+                    <div class="project-image">
+                        <img src="images/gg chart.png" alt="Project 4">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link" onclick="openPopup('4'); return false;">
+                                    <i class="fas fa-info"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>GG Chart Generator</h3>
+                        <p>To analyse my motorcycle riding patterns, I created a script to generate a Total Acceleration (G-G) chart that measures front-and-back, and side-to-side G forces.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>NLTK</span>
+                            <span>scikit-learn</span>
+                            <span>Flask</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Project 6 -->
+                <div class="project-card animate-on-scroll" data-category="mobile">
+                    <div class="project-image">
+                        <img src="images/three-dots-myth-symbol.jpg" alt="Project 6">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link"><i class="fas fa-link"></i></a>
+                                <a href="#" class="project-github"><i class="fab fa-github"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-info">
+                        <h3>More to come!</h3>
+                        <p>As someone who loves software, I am constantly writing little scripts to solve various problems I encounter in my day-to-day</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <div class="contact-info animate-on-scroll">
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h3>Email</h3>
+                            <p>8aron.liu3@gmail.com</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h3>Phone</h3>
+                            <p>0435907042</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h3>Location</h3>
+                            <p>Sydney, NSW, Australia</p>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <a href="#"><span class="highlight">Aaron</span>Liu</a>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- JavaScript for animations and interactions -->
+    <script>
+        // Mobile Navigation Toggle
+        document.getElementById('navToggle').addEventListener('click', function() {
+            document.getElementById('navLinks').classList.toggle('active');
+            this.classList.toggle('active');
+        });
+
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+                // Close mobile menu if open
+                document.getElementById('navLinks').classList.remove('active');
+                document.getElementById('navToggle').classList.remove('active');
+            });
+        });
+
+        // Project filtering
+        document.querySelectorAll('.filter-btn').forEach(button => {
+            button.addEventListener('click', function() {
+                // Remove active class from all buttons
+                document.querySelectorAll('.filter-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                });
+                // Add active class to clicked button
+                this.classList.add('active');
+                
+                const filter = this.getAttribute('data-filter');
+                
+                document.querySelectorAll('.project-card').forEach(card => {
+                    if (filter === 'all' || card.getAttribute('data-category') === filter) {
+                        card.style.display = 'block';
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+        // Scroll animations
+        const animateOnScroll = function() {
+            const elements = document.querySelectorAll('.animate-on-scroll');
+            
+            elements.forEach(element => {
+                const elementPosition = element.getBoundingClientRect().top;
+                const windowHeight = window.innerHeight;
+                
+                if (elementPosition < windowHeight - 100) {
+                    element.classList.add('animate');
+                }
+            });
+        };
+
+        // Run on load
+        animateOnScroll();
+        
+        // Run on scroll
+        window.addEventListener('scroll', animateOnScroll);
+    </script>
+    <style>
+        .popup {
+            display: none;
+            position: fixed;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.5);
+            z-index: 999;
+        }
+    
+        .popup-content {
+            background-color: #fff;
+            padding: 20px;
+            width: 60%;
+            height: 80%;
+            margin: 100px auto;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            position: relative;
+        }
+    
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            font-size: 24px;
+            font-weight: bold;
+            cursor: pointer;
+        }
+        .imgContainer {
+            display: flex;
+            flex-direction: column; /* Stack items vertically */
+            align-items: center; /* Center items horizontally */
+            text-align: center; /* Ensure the header text is centered */
+        }
+
+
+
+
+        .skills-section {
+            padding: 80px 0;
+            background-color: #f8f9fa;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 15px;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .section-underline {
+            height: 4px;
+            width: 70px;
+            background-color: #4169e1;
+            margin: 0 auto 50px;
+        }
+
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .skills-card {
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+            padding: 30px;
+            width: 100%;
+            max-width: 350px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .skills-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .card-title {
+            color: #4169e1;
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 25px;
+        }
+
+        .card-icon {
+            text-align: center;
+            margin-bottom: 25px;
+            font-size: 2.5rem;
+            color: #4169e1;
+        }
+
+        .skills-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+            justify-content: center;
+        }
+
+        .skill-tag {
+            background-color: #f0f4ff;
+            color: #4169e1;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            border: 1px solid #e0e8ff;
+        }
+
+        .skill-tag:hover {
+            background-color: #4169e1;
+            color: white;
+            transform: scale(1.05);
+        }
+
+        /* Responsive adjustments */
+        @media (max-width: 768px) {
+            .skills-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .skills-card {
+                max-width: 100%;
+            }
+        }
+    </style>
+    
+    <!-- JavaScript to control the popup -->
+    <script>
+        function openPopup(popupNo) {
+            document.getElementById("popup" + popupNo).style.display = "block";
+            document.body.classList.add('no-scroll');
+        }
+    
+        function closePopup(popupNo) {
+            document.getElementById("popup" + popupNo).style.display = "none";
+            document.body.classList.remove('no-scroll');
+        }
+    
+        // Close popup when clicking outside the content
+        window.onclick = function(event) {
+            const popup = document.getElementById("popup");
+            if (event.target === popup) {
+                closePopup();
+            }
+        }
+
+
+        document.addEventListener('DOMContentLoaded', function() {
+            // Animate skills cards on scroll
+            const skillsCards = document.querySelectorAll('.skills-card');
+            
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = 1;
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, {
+                threshold: 0.1
+            });
+            
+            // Set initial state and observe each card
+            skillsCards.forEach((card, index) => {
+                card.style.opacity = 0;
+                card.style.transform = 'translateY(20px)';
+                card.style.transitionDelay = `${index * 0.1}s`;
+                observer.observe(card);
+            });
+            
+            // Add hover effect to skill tags
+            const skillTags = document.querySelectorAll('.skill-tag');
+            skillTags.forEach(tag => {
+                tag.addEventListener('mouseenter', function() {
+                    this.style.transform = 'scale(1.05)';
+                });
+                
+                tag.addEventListener('mouseleave', function() {
+                    this.style.transform = 'scale(1)';
+                });
+            });
+        });
+    </script>
+</body>
+</html>
