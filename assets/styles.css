@@ -45,10 +45,27 @@ img {
     height: auto;
 }
 
+.leetcode-icon {
+    width: 24px;
+    height: 24px;
+    vertical-align: middle;
+    filter: brightness(0) invert(1); /* Makes the favicon white */
+    transition: transform 0.3s ease;
+}
+
+.leetcode-icon:hover {
+    transform: scale(1.1);
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.alignLeft {
+    text-align: left; /* Left-align text */
+    justify-content: left;
 }
 
 .section-title {
@@ -219,6 +236,13 @@ section {
     background-color: rgba(74, 108, 247, 0.05);
     z-index: 0;
 }
+.centeredDiv {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    justify-content: center; /* Center vertically */
+    align-items: center; /* Center horizontally */
+    text-align: center; /* Center text */
+}
 
 .hero .container {
     display: flex;
@@ -228,10 +252,6 @@ section {
     z-index: 1;
 }
 
-.hero-content {
-    flex: 1;
-    padding-right: 50px;
-}
 
 .hero-image {
     flex: 1;
